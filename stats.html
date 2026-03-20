@@ -66,9 +66,49 @@
         chart.draw(data, options);
       }
     </script>
+
+
+ <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Month', 'Replies posted'],
+        
+          ['Aug 2025',  2228],
+          ['Sep 2025',  2907],
+          ['Oct 2025',  3474],
+          ['Nov 2025',  3514],
+          ['Dec 2025',  3846],
+          ['Jan 2026',      3649],
+          ['Feb 2026',  1947]
+        ]);
+
+        var options = {
+          title: 'Replies posted per month',
+          //curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('repliesposted'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+
+
+
+
+
+    
   </head>
   <body>
     <div id="tanksdestroyed" style="width: 900px; height: 500px"></div>
+    <hr>
     <div id="threadscreated" style="width: 900px; height: 500px"></div>
+    <hr>
+    <div id="repliesposted" style="width: 900px; height: 500px"></div>
   </body>
 </html>
