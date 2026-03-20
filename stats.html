@@ -8,19 +8,19 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Month', 'Tanks destroyed'],
-          ['July 2025',  1536218],
-          ['September 2025',  1656970],
-          ['August 2025',  1365243],
-          ['October 2025',  1653521],
-          ['November 2025',  1792135],
-          ['December 2025',  1671332],
-          ['January 2026',      1620402],
-          ['February 2026',  1557586]
+          ['Jul 2025',  1536218],
+          ['Sep 2025',  1656970],
+          ['Aug 2025',  1365243],
+          ['Oct 2025',  1653521],
+          ['Nov 2025',  1792135],
+          ['Dec 2025',  1671332],
+          ['Jan 2026',      1620402],
+          ['Feb 2026',  1557586]
         ]);
 
         var options = {
           title: 'Tanks destroyed per month',
-          //curveType: 'function',
+          curveType: 'function',
           legend: { position: 'bottom' }
         };
 
