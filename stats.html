@@ -1,0 +1,132 @@
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Month', 'Tanks destroyed'],
+          ['Jul 2025',  1536218],
+          ['Aug 2025',  1365243],
+          ['Sep 2025',  1656970],
+          ['Oct 2025',  1653521],
+          ['Nov 2025',  1792135],
+          ['Dec 2025',  1671332],
+          ['Jan 2026',      1620402],
+          ['Feb 2026',  1557586],
+          ['Mar 2026', 1724629],
+          ['Apr 2026', 1607164],
+          ['May 2026', 1348906],
+          ['June 2026', 1375385],
+          ['July 2026', 1251704],
+          ['August 2026', 1292315]
+        ]);
+
+        var options = {
+          title: 'Tanks destroyed per month',
+          //curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('tanksdestroyed'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+
+    
+     <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Month', 'Threads created'],
+          ['Jan 2025',  321],
+          ['Feb 2025',  239],
+          ['Mar 2025',  194],
+          ['Apr 2025',  450],
+          ['May 2025',  295],
+          ['Jun 2025',  263],
+          ['Jul 2025',  261],
+          ['Aug 2025',  248],
+          ['Sep 2025',  209],
+          ['Oct 2025',  269],
+          ['Nov 2025',  264],
+          ['Dec 2025',  346],
+          ['Jan 2026',      250],
+          ['Feb 2026',  256],
+          ['Mar 2026', 385],
+          ['Apr 2026', 344],
+          ['May 2026', 529],
+          ['June 2026', 516],
+          ['July 2026', 332],
+          ['August 2026', 290]
+        ]);
+
+        var options = {
+          title: 'Threads created per month',
+          //curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('threadscreated'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+
+ <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Month', 'Replies posted'],
+        
+          ['Aug 2025',  2228],
+          ['Sep 2025',  2907],
+          ['Oct 2025',  3474],
+          ['Nov 2025',  3514],
+          ['Dec 2025',  3846],
+          ['Jan 2026',      3649],
+          ['Feb 2026',  1947],
+          ['Mar 2026', 3820],
+          ['Apr 2026', 3222],
+          ['May 2026', 4619],
+          ['June 2026', 3204],
+          ['July 2026', 2152],
+          ['August 2026', 2259]
+        ]);
+
+        var options = {
+          title: 'Replies posted per month',
+          //curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('repliesposted'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+
+
+
+
+
+    
+  </head>
+  <body>
+    <div id="tanksdestroyed" style="width: 900px; height: 500px"></div>
+    <hr>
+    <div id="threadscreated" style="width: 900px; height: 500px"></div>
+    <hr>
+    <div id="repliesposted" style="width: 900px; height: 500px"></div>
+  </body>
+</html>
